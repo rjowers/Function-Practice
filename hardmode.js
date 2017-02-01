@@ -27,3 +27,20 @@ for(var i=0; i < strings.length; i++){
 }
 
 console.print(longest)
+
+
+//Question 3
+
+
+
+
+
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+
+var even = function (num) {
+return num % 2 === 0;
+};
+
+var numbers = numbers.filter(even);
+
+console.log(numbers);
