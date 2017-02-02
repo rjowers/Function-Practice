@@ -154,13 +154,11 @@ var instructors = [
 ];
 
 
-
-
-function teacher(instructors){
-
-	for (i = 0; i < instructors.length; i++) {
-
-		if(instructors[i] === "is") {
-			theIs.push(instructors[i])
-		}
-	};
+function find() {
+  var findAll = [];
+ for ( i = 0; i < instructors.length; i++) {
+  if (instructors[i].teaches === "JavaScript") {
+    findAll.push(instructors[i].firstname)
+  }
+}return findAll.sort();
+}
