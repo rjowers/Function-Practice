@@ -8,7 +8,7 @@ for (var i = 0; i <= numbers.length; i++) {
     if (numbers[i] > largest) {
         var largest = numbers[i];
     }
-}
+};
 
 console.log(largest)
 
@@ -31,7 +31,7 @@ console.log(longest)
 
 
 var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
-
+var even = []
 var even = function(num) {
     return num % 2 === 0;
 };
@@ -40,6 +40,22 @@ var numbers = numbers.filter(even);
 
 console.log(numbers);
 
+
+
+
+
+  var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
+  var even = []
+
+
+  for (var i = 0; i , numbers.length; i++) {
+  if ((numbers[i] % 2) === 0) {
+    even.push(numbers[i]);
+
+  }
+};
+
+console.log(even);
 ///////////////////////Question 4
 
 
@@ -75,18 +91,20 @@ console.log(odd);
 
 
 var strings = ['this','is','a','collection','of','words'];
-var theIs = [];
 
-function findIs(strings){
 
+
+function findIs(){
+  var theIs = [];
 	for (i = 0; i < strings.length; i++) {
+    var letter = strings[i];
+    for (count = 0; count < letter.length; count++)
+		if(letter[count] === "i" && letter[count + 1] === "s") {
+			theIs.push(letter);
+      }
+	}  return theIs;
+};
 
-		if(i = ("is")) {
-			theIs.push(i)
-		}
-	};
-
-console.log(theIs);
 
 
 
@@ -121,7 +139,8 @@ console.log(strings);
 
 //Question 7
 
-
+//step 1- Find all instructors that teach JavaScript
+//step 2- list them alphabetically
 
 var instructors = [
     { firstname : 'JD', teaches : 'JavaScript'},
@@ -133,3 +152,15 @@ var instructors = [
     { firstname : 'Calvin', teaches : 'JavaScript'},
     { firstname : 'James', teaches : 'Ruby'}
 ];
+
+
+
+
+function teacher(instructors){
+
+	for (i = 0; i < instructors.length; i++) {
+
+		if(instructors[i] === "is") {
+			theIs.push(instructors[i])
+		}
+	};
