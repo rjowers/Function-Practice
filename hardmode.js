@@ -42,18 +42,11 @@ console.log(numbers);
 
 ///////////////////////Question 4
 
-// TODO write question 4 with a for loop and a conditional instead of filter
 
 var numbers = [1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6];
 
 function odd(numbers) {
   return numbers % 2 === 1;
-    // if (numbers % 2 === 1) {
-    //       return true
-    // }
-    // else {
-    //   return false;
-    // }
 };
 
 var alltheodds = numbers.filter(odd)
@@ -81,17 +74,62 @@ console.log(odd);
 //Question 5
 
 
-
 var strings = ['this','is','a','collection','of','words'];
+var theIs = [];
+
+function findIs(strings){
+
+	for (i = 0; i < strings.length; i++) {
+
+		if(i = ("is")) {
+			theIs.push(i)
+		}
+	};
+
+console.log(theIs);
 
 
 
-function checkforis(strings) {
-
-    return strings === "is";
-};
 
 
-var alltheis = strings.find(checkforis)
 
-console.log (alltheis);
+
+
+//Question 6
+
+var numbers = [1,12,4,18,9,7,11,3,101,5,6];
+var strings = ['this','is','a','collection','of','words'];
+var instructors = [
+    { firstname : 'JD', teaches : 'JavaScript'},
+    { firstname : 'Tim', teaches : 'JavaScript'},
+    { firstname : 'Brit', teaches : 'Ruby'},
+    { firstname : 'Joe', teaches : 'iOS'},
+    { firstname : 'Jake', teaches : 'JavaScript'},
+    { firstname : 'Will', teaches : 'JavaScript'},
+    { firstname : 'Calvin', teaches : 'JavaScript'},
+    { firstname : 'James', teaches : 'Ruby'}
+];
+
+for (var i=0; i < numbers.length; i++) {
+    strings.push( numbers[i] );
+}
+for (var i=0; i < instructors.length; i++) {
+    strings.push( instructors[i] );
+}
+
+console.log(strings);
+
+//Question 7
+
+
+
+var instructors = [
+    { firstname : 'JD', teaches : 'JavaScript'},
+    { firstname : 'Tim', teaches : 'JavaScript'},
+    { firstname : 'Brit', teaches : 'Ruby'},
+    { firstname : 'Joe', teaches : 'iOS'},
+    { firstname : 'Jake', teaches : 'JavaScript'},
+    { firstname : 'Will', teaches : 'JavaScript'},
+    { firstname : 'Calvin', teaches : 'JavaScript'},
+    { firstname : 'James', teaches : 'Ruby'}
+];
